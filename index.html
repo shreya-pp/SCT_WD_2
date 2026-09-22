@@ -3,65 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Stopwatch</title>
-
+    <title>Precision Stopwatch</title>
+    <meta name="description" content="A polished stopwatch project with lap tracking, keyboard shortcuts, and portfolio-grade UI design.">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <div class="stopwatch-container">
-
-        <h1>Stopwatch</h1>
-        <p class="subtitle">Measure every moment</p>
-
-        <!-- Stopwatch Display -->
-        <div class="display">
-            <span id="minutes">00</span>
-            <span>:</span>
-            <span id="seconds">00</span>
-            <span>:</span>
-            <span id="milliseconds">00</span>
-        </div>
-
-        <!-- Buttons -->
-        <div class="controls">
-
-            <button id="startBtn" class="start-btn">
-                ▶ Start
-            </button>
-
-            <button id="pauseBtn" class="pause-btn">
-                ⏸ Pause
-            </button>
-
-            <button id="lapBtn" class="lap-btn">
-                🏁 Lap
-            </button>
-
-            <button id="resetBtn" class="reset-btn">
-                ↻ Reset
-            </button>
-
-        </div>
-
-        <!-- Lap Section -->
-        <div class="laps-section">
-
-            <h2>Lap Times</h2>
-
-            <div id="lapList" class="lap-list">
-                <p class="empty-message">
-                    No laps recorded yet
-                </p>
+    <div class="app-shell">
+        <header class="topbar">
+            <div class="brand" aria-label="Stopwatch brand">
+                <span class="brand-mark">⏱</span>
+                <div>
+                    <p class="eyebrow">Portfolio Project</p>
+                    <h1>Precision Stopwatch</h1>
+                </div>
             </div>
 
-        </div>
+            <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+                🌙
+            </button>
+        </header>
 
+        <main class="stopwatch-card">
+            <div class="status-row">
+                <span id="statusPill" class="status-pill">Ready</span>
+            </div>
+
+            <div class="display" aria-live="polite">
+                <span id="minutes">00</span>
+                <span class="separator">:</span>
+                <span id="seconds">00</span>
+                <span class="separator">:</span>
+                <span id="milliseconds">00</span>
+            </div>
+
+            <div class="controls" aria-label="Stopwatch controls">
+                <button id="startBtn" class="start-btn" type="button">▶ Start</button>
+                <button id="pauseBtn" class="pause-btn" type="button" disabled>⏸ Pause</button>
+                <button id="lapBtn" class="lap-btn" type="button" disabled>🏁 Lap</button>
+                <button id="resetBtn" class="reset-btn" type="button">↻ Reset</button>
+            </div>
+
+            <div class="secondary-actions">
+                <button id="clearLapsBtn" class="ghost-btn" type="button">Clear Laps</button>
+            </div>
+
+            <section class="laps-section" aria-label="Recorded lap times">
+                <div class="section-heading">
+                    <h2>Lap Times</h2>
+                    <span id="lapCount" class="lap-count">0 laps</span>
+                </div>
+
+                <div id="lapList" class="lap-list">
+                    <p class="empty-message">No laps recorded yet</p>
+                </div>
+            </section>
+        </main>
     </div>
 
     <script src="script.js"></script>
-
 </body>
 </html>
