@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stopwatch</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="stopwatch-container">
+
+        <h1>Stopwatch</h1>
+        <p class="subtitle">Measure every moment</p>
+
+        <!-- Stopwatch Display -->
+        <div class="display">
+            <span id="minutes">00</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+            <span>:</span>
+            <span id="milliseconds">00</span>
+        </div>
+
+        <!-- Buttons -->
+        <div class="controls">
+
+            <button id="startBtn" class="start-btn">
+                ▶ Start
+            </button>
+
+            <button id="pauseBtn" class="pause-btn">
+                ⏸ Pause
+            </button>
+
+            <button id="lapBtn" class="lap-btn">
+                🏁 Lap
+            </button>
+
+            <button id="resetBtn" class="reset-btn">
+                ↻ Reset
+            </button>
+
+        </div>
+
+        <!-- Lap Section -->
+        <div class="laps-section">
+
+            <h2>Lap Times</h2>
+
+            <div id="lapList" class="lap-list">
+                <p class="empty-message">
+                    No laps recorded yet
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    color: white;
+}
+
+.stopwatch-container {
+    width: 90%;
+    max-width: 600px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 25px;
+
+    backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    opacity: 0.8;
+    margin-bottom: 35px;
+}
+
+/* Stopwatch Display */
+
+.display {
+    font-size: 70px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 35px;
+
+    font-family: monospace;
+}
+
+/* Buttons */
+
+.controls {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+button {
+    border: none;
+
+    padding: 13px 20px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    opacity: 0.9;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.start-btn {
+    background: #22c55e;
+    color: white;
+}
+
+.pause-btn {
+    background: #f59e0b;
+    color: white;
+}
+
+.lap-btn {
+    background: #3b82f6;
+    color: white;
+}
+
+.reset-btn {
+    background: #ef4444;
+    color: white;
+}
+
+/* Lap Section */
+
+.laps-section {
+    margin-top: 35px;
+
+    text-align: left;
+}
+
+.laps-section h2 {
+    margin-bottom: 15px;
+
+    text-align: center;
+}
+
+.lap-list {
+    max-height: 250px;
+
+    overflow-y: auto;
+
+    padding-right: 5px;
+}
+
+.lap {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 12px 15px;
+
+    margin-bottom: 8px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border-radius: 8px;
+}
+
+.empty-message {
+    text-align: center;
+
+    opacity: 0.7;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .stopwatch-container {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .display {
+        font-size: 45px;
+    }
+
+    button {
+        width: 45%;
+    }
+}
