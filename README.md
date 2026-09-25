@@ -6,10 +6,6 @@ A polished stopwatch web app with lap tracking, fast/slow lap highlights, keyboa
 
 **[View the Live Stopwatch](https://shreyapolicepatil27-droid.github.io/SCT_WD_2/)**
 
-## 📸 Screenshot
-
-![Stopwatch Screenshot](./stopwatch-main.png)
-
 ## 📌 Project Overview
 
 The Interactive Stopwatch is a browser-based application designed to provide accurate and easy-to-use time tracking. It demonstrates the practical use of HTML, CSS, and JavaScript to create an interactive web application with real-time updates and user controls.
