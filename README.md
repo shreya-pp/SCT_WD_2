@@ -89,16 +89,6 @@ Possible future improvements include:
 - Improved animations
 - Exporting lap times
 
-## 👩‍💻 Author
-
-**Shreya Police Patil**
-
-BTech – Information Science and Engineering
-
-### Internship Project
-
-**Web Development Internship – SCT_WD_2**
-
 ## 📄 License
 
 This project is created for educational and internship purposes.
